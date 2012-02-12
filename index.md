@@ -1,13 +1,10 @@
 ---
 layout: default
-title: Hekyll Presentation Generator
+title: Drupalcon Denver 2012 - Hekyll Theme
 ---
 
-# Hekyll #
-_pronunciation: "heckle"_
-
-Hekyll is a presentation generator that uses Jekyll and Impress.js to create awesome presentations. You write Markdown files, which get turned into individual slides for an Impress.js presentation. How cool is that?
+This is a demonstration of a [Hekyll](https://github.com/bmcmurray/hekyll) theme for the Drupalcon Denver 2012 conference style template.
 
 [Check it out in action!](preso.html)
 
-[Fork me on GitHub](https://github.com/bmcmurray/hekyll)
+[Fork me on GitHub](https://github.com/bmcmurray/drupalcon-denver-2012-hekyll)
