@@ -2,6 +2,12 @@
 
 A starter theme for Drupalcon Denver 2012 presentations for use with Hekyll.
 
+Slide sizes are optimized for display at 1024x768 (which is what I'm assuming the conference projectors will be) or higher.
+
+Present using Chrome in Presenter Mode, or Safari in Fullscreen (if you have Mac OS 10.7).
+
+Note: The webfont used on [denver2012.drupal.org](http://denver2012.drupal.org) is not free, so I have picked a similar font as an alternative: [OSP DIN](www.fontsquirrel.com/fonts/osp-din).
+
 ## To Use: ##
 
 1. Install and configure Hekyll
@@ -13,7 +19,4 @@ A starter theme for Drupalcon Denver 2012 presentations for use with Hekyll.
 
 ## Coming Soon: ##
 
-- Fonts to match Drupalcon template
-- Colors to match Drupalcon template
-- Sensible non-title slide defaults
 - Session Feedback slide
