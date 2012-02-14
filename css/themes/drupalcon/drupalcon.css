@@ -82,7 +82,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
   min-height: 768px;
-  background: black;
+  background: #092857 url('images/bg-mountains.jpg?1329186066') bottom center no-repeat;
+  -moz-background-size: 100% 349px;
+  -webkit-background-size: 100% 349px;
+  -o-background-size: 100% 349px;
+  background-size: 100% 349px;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   color: #787a64; }
 
@@ -109,7 +114,11 @@ h1 {
   color: #454aa3;
   font-weight: bold;
   font-size: 2em;
-  font-family: "OSPDIN", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif; }
+  font-family: "OSPDIN", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  text-transform: uppercase; }
+
+pre, code {
+  font-family: Monaco, monospace, sans-serif; }
 
 /* COMMON STEP STYLES */
 .step {
@@ -155,33 +164,35 @@ h1 {
  */
 .slide {
   display: block;
-  width: 1024px;
-  height: 768px;
+  width: 800px;
+  height: 600px;
   padding: 40px 60px;
   background: white;
-  background-repeat: no-repeat;
   font-family: "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
   color: #787a64;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: -1px; }
-
-.slide q {
-  display: block;
-  font-size: 50px;
-  line-height: 72px;
-  margin-top: 100px; }
-.slide q strong {
-  white-space: nowrap; }
-.slide p {
-  margin: 1.25em 0; }
-.slide h1 {
-  line-height: 100%; }
-.slide ul, .slide p, .slide h2, .slide h3, .slide h4, .slide h5, .slide h6 {
-  margin-top: 1em; }
-.slide li {
-  margin: 0 0 0.5em; }
+  letter-spacing: -1px;
+  -moz-box-shadow: 15px 15px 30px 1px black;
+  -webkit-box-shadow: 15px 15px 30px 1px black;
+  -o-box-shadow: 15px 15px 30px 1px black;
+  box-shadow: 15px 15px 30px 1px black; }
+  .slide q {
+    display: block;
+    font-size: 50px;
+    line-height: 72px;
+    margin-top: 100px; }
+    .slide q strong {
+      white-space: nowrap; }
+  .slide p {
+    margin: 1.25em 0; }
+  .slide h1 {
+    line-height: 100%; }
+  .slide ul, .slide p, .slide h2, .slide h3, .slide h4, .slide h5, .slide h6 {
+    margin-top: 1em; }
+  .slide li {
+    margin: 0 0 0.5em; }
 
 /* Drupalcon Denver 2012 Slide templates */
 .drupalcon-intro {
@@ -191,13 +202,17 @@ h1 {
   background-image: url('images/dc-denver2012.png?1329017942'), -o-radial-gradient(50% 50%, #0f397d 1%, #082049 30%);
   background-image: url('images/dc-denver2012.png?1329017942'), -ms-radial-gradient(50% 50%, #0f397d 1%, #082049 30%);
   background-image: url('images/dc-denver2012.png?1329017942'), radial-gradient(50% 50%, #0f397d 1%, #082049 30%);
-  background-size: 1024px 768px; }
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px; }
 
 .drupalcon-title {
   background-image: url('images/dc-denver2012-title-bg.png?1329017942');
   background-size: 1025px 768px;
   text-align: center;
-  padding: 150px 90px 40px 90px; }
+  padding: 150px 90px 40px 90px;
+  width: 1024px;
+  height: 768px; }
 
 /* IMPRESS NOT SUPPORTED STYLES */
 .fallback-message {
