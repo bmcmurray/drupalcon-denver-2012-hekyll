@@ -16,7 +16,9 @@ body {
 
     min-height: 768px;
 
-    background: $black;
+    @include background($bg image-url('bg-mountains.jpg') bottom center no-repeat);
+    @include background-size(100% 349px);
+    background-attachment: fixed;
 
     -webkit-font-smoothing: antialiased;
 
@@ -46,6 +48,11 @@ h1 {
     size: 2em;
     family: $headlines;
   }
+  text-transform: uppercase;
+}
+
+pre, code {
+  font-family: $mono;
 }
 
 /* COMMON STEP STYLES */
@@ -68,7 +75,7 @@ h1 {
 }
 
 .step:not(.active) {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 /* Simple Slideshow Styles */
@@ -100,39 +107,37 @@ h1 {
  */
 
 .slide {
-    display: block;
+  display: block;
 
-    width: 1024px;
-    height: 768px;
-    
-    padding: 40px 60px;
+  width: 800px;
+  height: 600px;
+  
+  padding: 40px 60px;
 
-    background: $base;
+  background: $base;
 
-    background-repeat: no-repeat;
+  font-family: $sans;
 
-    font-family: $sans;
+  color: $text;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    color: $text;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  font-size: 30px;
+  line-height: 36px;
 
-    font-size: 30px;
-    line-height: 36px;
+  letter-spacing: -1px;
 
-    letter-spacing: -1px;
-}
+  @include single-box-shadow($black, 15px, 15px, 30px, 1px);
 
-.slide {
   q {
     display: block;
     font-size: 50px;
     line-height: 72px;
 
     margin-top: 100px;
-  }
 
-  q strong {
-    white-space: nowrap;
+    strong {
+      white-space: nowrap;
+    }
   }
 
   p {
@@ -159,6 +164,9 @@ h1 {
     radial-gradient(50% 50%, $lightBlue 1%, $darkBlue 30%)
   );
   background-size: 1024px 768px;
+
+  width: 1024px;
+  height: 768px;
 }
 
 .drupalcon-title {
@@ -167,6 +175,9 @@ h1 {
 
   text-align: center;
   padding: 150px 90px 40px 90px;
+
+  width: 1024px;
+  height: 768px;
 }
 
 /* IMPRESS NOT SUPPORTED STYLES */
