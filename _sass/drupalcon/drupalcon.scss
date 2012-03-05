@@ -211,9 +211,37 @@ pre, code {
   }
 }
 
+.page-break  { display:none; }
+
 /* PRINT STYLES */
 @media print {
+  html { 
+    width: 8.5in; 
+    height: 11in;
+  }
+  body { 
+    background: white;
+  } 
+
   .step {
-    page-break-after: always;
+    position: relative !important;
+    margin: 100px auto !important;
+    width: 90%;
+    background-position: center center !important;
+    background-size: 101% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .page-break {
+    display: block;
+    page-break-before: always;
+  }
+
+  /* Simple Slideshow Styles */
+
+  .simple-slideshow .step:not(.active) {
+    opacity: 1 !important;
+    visibility: visible;
+    //page-break-after: always;
   }
 }
