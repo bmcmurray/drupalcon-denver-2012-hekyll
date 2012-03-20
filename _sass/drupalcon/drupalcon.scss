@@ -169,6 +169,38 @@ pre, code {
   height: 768px;
 }
 
+.drupalcon-feedback {
+  @include background-image(
+    image-url('dc-denver2012-logo.png'),
+    radial-gradient(50% 50%, $lightBlue 1%, $darkBlue 30%)
+  );
+  background-size: 1024px 768px, 1024px 768px;
+  width: 1024px;
+  height: 768px;
+
+  text-align: center;
+  padding: 225px 90px 40px 90px;
+
+  h1 {
+    color: $white;
+    font: {
+      weight: bold;
+      size: 3em;
+      family: $headlines;
+    }
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: lighten($highlight, 10%);
+    font: {
+      weight: bold;
+      size: 1.5em;
+      family: $headlines;
+    }
+  }
+}
+
 .drupalcon-title {
   @include background-image(image-url('dc-denver2012-title-bg.png'));
   background-size: 1025px 768px;

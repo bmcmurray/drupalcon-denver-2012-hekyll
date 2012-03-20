@@ -83,8 +83,8 @@ body {
   font-family: "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
   min-height: 768px;
   background: #092857 url('images/bg-mountains.jpg?1329186066') bottom center no-repeat;
-  -moz-background-size: 100% 349px;
   -webkit-background-size: 100% 349px;
+  -moz-background-size: 100% 349px;
   -o-background-size: 100% 349px;
   background-size: 100% 349px;
   background-attachment: fixed;
@@ -101,12 +101,14 @@ a {
   color: #00a9a9;
   text-decoration: underline;
   padding: 0 0.1em;
-  -moz-transition-property: background;
   -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -ms-transition-property: background;
   -o-transition-property: background;
   transition-property: background;
-  -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s; }
 
@@ -123,9 +125,8 @@ pre, code {
 /* COMMON STEP STYLES */
 .step {
   padding: 40px;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
   font-size: 48px;
@@ -133,8 +134,9 @@ pre, code {
 
 /* fade out inactive slides */
 .step {
-  -moz-transition-duration: 1s;
   -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s; }
 
@@ -174,9 +176,8 @@ pre, code {
   font-size: 30px;
   line-height: 36px;
   letter-spacing: -1px;
-  -moz-box-shadow: 15px 15px 30px 1px black;
   -webkit-box-shadow: 15px 15px 30px 1px black;
-  -o-box-shadow: 15px 15px 30px 1px black;
+  -moz-box-shadow: 15px 15px 30px 1px black;
   box-shadow: 15px 15px 30px 1px black; }
   .slide q {
     display: block;
@@ -205,6 +206,30 @@ pre, code {
   background-size: 1024px 768px;
   width: 1024px;
   height: 768px; }
+
+.drupalcon-feedback {
+  background-image: url('images/dc-denver2012-logo.png?1329017942'), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, color-stop(1%, #0f397d), color-stop(30%, #082049));
+  background-image: url('images/dc-denver2012-logo.png?1329017942'), -webkit-radial-gradient(50% 50%, #0f397d 1%, #082049 30%);
+  background-image: url('images/dc-denver2012-logo.png?1329017942'), -moz-radial-gradient(50% 50%, #0f397d 1%, #082049 30%);
+  background-image: url('images/dc-denver2012-logo.png?1329017942'), -o-radial-gradient(50% 50%, #0f397d 1%, #082049 30%);
+  background-image: url('images/dc-denver2012-logo.png?1329017942'), -ms-radial-gradient(50% 50%, #0f397d 1%, #082049 30%);
+  background-image: url('images/dc-denver2012-logo.png?1329017942'), radial-gradient(50% 50%, #0f397d 1%, #082049 30%);
+  background-size: 1024px 768px, 1024px 768px;
+  width: 1024px;
+  height: 768px;
+  text-align: center;
+  padding: 225px 90px 40px 90px; }
+  .drupalcon-feedback h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: "OSPDIN", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+    text-transform: uppercase; }
+  .drupalcon-feedback h2 {
+    color: #6064bb;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: "OSPDIN", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif; }
 
 .drupalcon-title {
   background-image: url('images/dc-denver2012-title-bg.png?1329017942');
